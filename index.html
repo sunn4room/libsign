@@ -116,7 +116,7 @@
         <img id="icon" src="./icon.png" />
         <div id="success">签到成功</div>
         <div id="description">疫情期间，出入公共场合请佩戴口罩，注意个人卫生。</div>
-        <div id="close">关闭</div>
+        <div id="close" onclick="closewindow()">关闭</div>
     </center>
     <div id="line"></div>
     <div id="table">
@@ -170,6 +170,10 @@
         var time = new Date().format("yyyy-MM-dd hh:mm:ss")
         document.getElementById("time").innerHTML = time;
         document.getElementById("table_time").innerHTML = time;
+
+        function closewindow() {
+            window.close()
+        }
     </script>
 </body>
 
